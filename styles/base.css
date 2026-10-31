@@ -1,0 +1,244 @@
+
+/* GENERAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #252525;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #1e5073;
+    color: white;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    padding: 18px;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #1e5073;
+    color: white;
+}
+
+/* MAIN LAYOUT */
+
+main {
+    max-width: 1400px;
+    margin: 25px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 5px 0 10px;
+    color: #252525;
+}
+
+/* CARDS */
+
+.card {
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.card h2 {
+    background-color: #1e5073;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.3rem;
+}
+
+/* ABOUT ME */
+
+.about-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.about-content p {
+    flex: 1;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.profile-image {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+}
+
+/* GERMANY SECTION */
+
+.country-section {
+    padding: 0 25px 25px;
+}
+
+.country-section h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto 15px;
+    max-width: 80%;
+    border-bottom: 2px solid #cccccc;
+}
+
+.country-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.country-content figure {
+    width: 220px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.country-content img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+}
+
+.country-content figcaption {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.country-content p {
+    flex: 1;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* WEB DEVELOPMENT RESOURCES */
+
+.resources-card ul {
+    padding: 130px 25px 30px 55px;
+}
+
+.resources-card li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.resources-card a {
+    color: #0000cc;
+}
+
+.resources-card a:hover {
+    color: #1e5073;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1e5073;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 25px;
+}
+
+footer p {
+    margin: 3px;
+}
+
+#lastModified {
+    color: #ffff00;
+    font-size: 0.9rem;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 800px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-card ul {
+        padding: 25px 25px 25px 45px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #course-title {
+        font-size: 1.25rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .country-content {
+        flex-direction: column;
+    }
+
+    .country-content figure {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 180px;
+    }
+}
+
