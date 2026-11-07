@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temple Album</title>
+    <meta name="description" content="A photo album of temples around the world.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Mobile styles first, then large-view styles -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class="site-title">Temple Album</p>
+        <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <nav id="primary-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="gallery">
+            <figure>
+                <img src="images/saltlake_utah-temple.jpg" alt="Salt Lake Utah Temple" width="400" height="250" loading="lazy">
+                <figcaption>Salt Lake Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome-italy-temple.jpg" alt="Rome Italy Temple" width="400" height="250" loading="lazy">
+                <figcaption>Rome Italy</figcaption>
+            </figure>
+            <figure>
+                <img src="images/frankfurt-gemany-tempel.jpg" alt="Frankfurt Germany Temple" width="400" height="250" loading="lazy">
+                <figcaption>Frankfurt Germany</figcaption>
+            </figure>
+            <figure>
+                <img src="images/france-paris-temple.jpg" alt="Paris France Temple" width="400" height="250" loading="lazy">
+                <figcaption>Paris France</figcaption>
+            </figure>
+            <figure>
+                <img src="images/logan-utah-temple.jpg" alt="Logan Utah Temple" width="400" height="250" loading="lazy">
+                <figcaption>Logan Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo_utah_temple.jpg" alt="Provo Utah Temple" width="400" height="250" loading="lazy">
+                <figcaption>Provo Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nauvoo-illinois-temple.jpg" alt="Nauvoo Illinois Temple" width="400" height="250" loading="lazy">
+                <figcaption>Nauvoo Illinois</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sandiego-california-temple.jpg" alt="San Diego California Temple" width="400" height="250" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="images/madrid-spain-temple.jpg" alt="Madrid Spain Temple" width="400" height="250" loading="lazy">
+                <figcaption>Madrid Spain</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Julie Nasser | Germany</p>
+        <p>7.11.2026: <span id="Last Modified"></span></p>
+    </footer>
+</body>
+</html>
